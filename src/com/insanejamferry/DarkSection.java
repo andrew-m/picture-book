@@ -2,19 +2,19 @@ package com.insanejamferry;
 
 public class DarkSection {
 
-    private int start;
-    private int end;
+    private int firstDark;
+    private int lastDark;
 
-    public DarkSection(int start, int end) {
-        this.end = end;
-        this.start = start;
+    public DarkSection(int firstDark, int lastDark) {
+        this.lastDark = lastDark;
+        this.firstDark = firstDark;
     }
 
-    public int getStart() {
-        return start;
+    public int getFirstDark() {
+        return firstDark;
     }
 
-    public int getEnd() {
-        return end;
+    public int getLastDark() {
+        return lastDark;
     }
 }

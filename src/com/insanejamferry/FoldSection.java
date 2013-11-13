@@ -19,6 +19,6 @@ public class FoldSection {
     }
 
     public static FoldSection fromDarkSection(DarkSection darkSection, double bookHeightRatio) {
-        return new FoldSection(darkSection.getStart() * bookHeightRatio, darkSection.getEnd() * bookHeightRatio);
+        return new FoldSection(darkSection.getFirstDark() * bookHeightRatio, (darkSection.getLastDark() + 1) * bookHeightRatio);
     }
 }
