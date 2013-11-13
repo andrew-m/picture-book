@@ -43,7 +43,6 @@ public class CalcuateFolds {
     private DarkSection getDarkPoint(BufferedImage image) {
         // TODO values will vary between different image types
 
-        // TODO all white/all black
         int start = -1;
         for (int y = 0; y < image.getHeight(); y++) {
             int rgb = image.getRGB(0, y);
@@ -52,6 +51,10 @@ public class CalcuateFolds {
             } else if (rgb == -1 && start > 0) {
                 return new DarkSection(start, y - 1);
             }
+        }
+
+        if (start >= 0) {
+            return new DarkSection(start, image.getHeight() - 1);
         }
         return null;
     }

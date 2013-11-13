@@ -1,5 +1,6 @@
 package com.insanejamferry;
 
+import org.hamcrest.core.Is;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -7,12 +8,14 @@ import java.io.File;
 import java.io.IOException;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class FoldTestWithSingleLineInEachColumn {
 
     private final static File oneLine = new File("test/images/30by30oneline7to11.png");
     private final static File threeLines = new File("test/images/30by30threelines.png");
+    private final static File allBlackOrWhite = new File("test/images/allblackandwhite.png");
 
     private CalcuateFolds calcuateFolds;
 
@@ -64,5 +67,20 @@ public class FoldTestWithSingleLineInEachColumn {
         assertThat(foldSections[1].getEnd(), is(32.0));
         assertThat(foldSections[2].getStart(), is(44.0));
         assertThat(foldSections[2].getEnd(), is(50.0));
+    }
+
+    @Test
+    public void allBlackAndWhite() throws IOException {
+        Book book = new Book(2, 60, allBlackOrWhite);
+
+        Folds folds = calcuateFolds.calculateFolds(book);
+
+        FoldSection[] foldSections = folds.getFolds();
+        assertThat(foldSections.length, is(2));
+
+        assertThat(foldSections[0].getStart(), is(0.0));
+        assertThat(foldSections[0].getEnd(), is(60.0));
+
+        assertThat(foldSections[1], Is.is(nullValue()));
     }
 }
