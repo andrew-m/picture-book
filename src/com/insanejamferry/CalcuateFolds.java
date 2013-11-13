@@ -1,10 +1,12 @@
 package com.insanejamferry;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
+import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CalcuateFolds {
 
@@ -16,14 +18,20 @@ public class CalcuateFolds {
         FoldSection [] foldSections = new FoldSection[book.getNumberOfSheets()];
 
         int columnWidth = image.getWidth() / book.getNumberOfSheets(); // rounding issues???
+        int sectionNumber = 0;
         for (int x = 0; x < book.getNumberOfSheets(); x++) {
             BufferedImage columnImage = getColumnImage(image, columnWidth, x);
 
-            DarkSection darkPoint = getDarkPoint(columnImage);
-            if (darkPoint == null) {
+            List<DarkSection> darkPoints = getDarkSections(columnImage);
+            if (darkPoints.isEmpty()) {
                 foldSections[x] = null;
             } else {
-                foldSections[x] = FoldSection.fromDarkSection(darkPoint, book.getHeight() / image.getHeight());
+                if (darkPoints.size() <= sectionNumber) {
+                    sectionNumber = 0;
+                }
+                foldSections[x] = FoldSection.fromDarkSection(darkPoints.get(sectionNumber), book.getHeight() / image.getHeight());
+
+                sectionNumber++;
             }
         }
 
@@ -40,22 +48,25 @@ public class CalcuateFolds {
         return columnImage;
     }
 
-    private DarkSection getDarkPoint(BufferedImage image) {
+    private List<DarkSection> getDarkSections(BufferedImage image) {
         // TODO values will vary between different image types
+
+        List<DarkSection> darkSections = new ArrayList<DarkSection>();
 
         int start = -1;
         for (int y = 0; y < image.getHeight(); y++) {
             int rgb = image.getRGB(0, y);
             if (rgb == -16777216 && start < 0) {
                 start = y;
-            } else if (rgb == -1 && start > 0) {
-                return new DarkSection(start, y - 1);
+            } else if (rgb == -1 && start >= 0) {
+                darkSections.add(new DarkSection(start, y - 1));
+                start = -1;
             }
         }
 
         if (start >= 0) {
-            return new DarkSection(start, image.getHeight() - 1);
+            darkSections.add(new DarkSection(start, image.getHeight() - 1));
         }
-        return null;
+        return darkSections;
     }
 }
