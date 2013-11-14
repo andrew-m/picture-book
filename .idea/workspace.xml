@@ -2,25 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55892abd-f2f3-4582-8f1e-c4f0fca9a6e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/java/com/insanejamferry/GenerateImageTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/insanejamferry/ImageGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/insanejamferry/Book.java" afterPath="$PROJECT_DIR$/src/com/insanejamferry/Book.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/insanejamferry/CalcuateFolds.java" afterPath="$PROJECT_DIR$/src/com/insanejamferry/CalcuateFolds.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/insanejamferry/FoldSection.java" afterPath="$PROJECT_DIR$/src/com/insanejamferry/FoldSection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/java/com/insanejamferry/FoldTestWithSingleLineInEachColumn.java" afterPath="$PROJECT_DIR$/test/java/com/insanejamferry/FoldTestWithSingleLineInEachColumn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/java/com/insanejamferry/FoldTestWithTwoLines.java" afterPath="$PROJECT_DIR$/test/java/com/insanejamferry/FoldTestWithTwoLines.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/insanejamferry/Folds.java" afterPath="$PROJECT_DIR$/src/com/insanejamferry/Folds.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="picture-book.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="55892abd-f2f3-4582-8f1e-c4f0fca9a6e4" time="1384434076110" ignored="false" />
+    <file path="/Dummy.txt" changelist="55892abd-f2f3-4582-8f1e-c4f0fca9a6e4" time="1384450620071" ignored="false" />
     <file path="/Book.java" changelist="55892abd-f2f3-4582-8f1e-c4f0fca9a6e4" time="1384435146859" ignored="false" />
-    <file path="/CalcuateFolds.java" changelist="55892abd-f2f3-4582-8f1e-c4f0fca9a6e4" time="1384435154943" ignored="false" />
+    <file path="/CalcuateFolds.java" changelist="55892abd-f2f3-4582-8f1e-c4f0fca9a6e4" time="1384450801852" ignored="false" />
     <file path="/FoldTestWithSingleLine.java" changelist="55892abd-f2f3-4582-8f1e-c4f0fca9a6e4" time="1384381690631" ignored="false" />
     <file path="/Folds.java" changelist="55892abd-f2f3-4582-8f1e-c4f0fca9a6e4" time="1384435003973" ignored="false" />
-    <file path="/fragment.java" changelist="55892abd-f2f3-4582-8f1e-c4f0fca9a6e4" time="1384435942936" ignored="false" />
+    <file path="/fragment.java" changelist="55892abd-f2f3-4582-8f1e-c4f0fca9a6e4" time="1384450620071" ignored="false" />
     <file path="/DarkSection.java" changelist="55892abd-f2f3-4582-8f1e-c4f0fca9a6e4" time="1384377678573" ignored="false" />
     <file path="/todo.txt" changelist="55892abd-f2f3-4582-8f1e-c4f0fca9a6e4" time="1384377778697" ignored="false" />
     <file path="/FoldSection.java" changelist="55892abd-f2f3-4582-8f1e-c4f0fca9a6e4" time="1384435784151" ignored="false" />
@@ -82,7 +74,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/com/insanejamferry/CalcuateFolds.java" line="55" class="com.insanejamferry.CalcuateFolds" package="com.insanejamferry">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/insanejamferry/CalcuateFolds.java" line="62" class="com.insanejamferry.CalcuateFolds" package="com.insanejamferry">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -132,10 +124,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalcuateFolds.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CalcuateFolds.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/insanejamferry/CalcuateFolds.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="43" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0">
+            <state line="16" column="63" selection-start="514" selection-end="514" vertical-scroll-proportion="0.36563072">
               <folding />
             </state>
           </provider>
@@ -163,9 +155,7 @@
         <entry file="file://$PROJECT_DIR$/test/java/com/insanejamferry/GenerateImageTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="8" selection-start="399" selection-end="712" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -177,10 +167,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="18" selection-start="22" selection-end="22" vertical-scroll-proportion="0.035149384">
+            <state line="1" column="18" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -190,9 +180,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/insanejamferry/ImageGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="33" column="13" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -209,7 +197,7 @@
       <file leaf-file-name="FoldTestWithSingleLineInEachColumn.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/java/com/insanejamferry/FoldTestWithSingleLineInEachColumn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="50" selection-start="2679" selection-end="2679" vertical-scroll-proportion="-12.333333">
+            <state line="40" column="24" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -239,18 +227,18 @@
         <option value="$PROJECT_DIR$/test/java/com/insanejamferry/GenerateImage.java" />
         <option value="$PROJECT_DIR$/src/com/insanejamferry/Folds.java" />
         <option value="$PROJECT_DIR$/src/com/insanejamferry/Book.java" />
-        <option value="$PROJECT_DIR$/src/com/insanejamferry/CalcuateFolds.java" />
         <option value="$PROJECT_DIR$/test/java/com/insanejamferry/FoldTestWithTwoLines.java" />
         <option value="$PROJECT_DIR$/test/java/com/insanejamferry/FoldTestWithSingleLineInEachColumn.java" />
         <option value="$PROJECT_DIR$/src/com/insanejamferry/ImageGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/insanejamferry/FoldSection.java" />
         <option value="$PROJECT_DIR$/test/java/com/insanejamferry/GenerateImageTests.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/com/insanejamferry/CalcuateFolds.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="100" />
+    <option name="x" value="4" />
     <option name="y" value="22" />
     <option name="width" value="1676" />
     <option name="height" value="1028" />
@@ -281,6 +269,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -382,7 +371,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -398,11 +386,12 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -412,7 +401,7 @@
       <recent name="com.insanejamferry" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GenerateImageTests">
+  <component name="RunManager" selected="JUnit.com.insanejamferry in picture-book">
     <configuration default="false" name="FoldTestWithSingleLineInEachColumn" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -445,38 +434,6 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="FoldTestWithSingleLineInEachColumn.allBlackAndWhite" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.insanejamferry.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="picture-book" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.insanejamferry" />
-      <option name="MAIN_CLASS_NAME" value="com.insanejamferry.FoldTestWithSingleLineInEachColumn" />
-      <option name="METHOD_NAME" value="allBlackAndWhite" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
     <configuration default="false" name="FoldTestWithTwoLines" type="JUnit" factoryName="JUnit" temporary="true">
@@ -569,6 +526,34 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="FoldTestWithSingleLineInEachColumn.threeSheetsWithOneLineGivesCorrectHeight" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.insanejamferry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="picture-book" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="com.insanejamferry" />
+      <option name="MAIN_CLASS_NAME" value="com.insanejamferry.FoldTestWithSingleLineInEachColumn" />
+      <option name="METHOD_NAME" value="threeSheetsWithOneLineGivesCorrectHeight" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Xmx2048m -Xms256m" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -607,18 +592,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.FoldTestWithSingleLineInEachColumn" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FoldTestWithSingleLineInEachColumn.allBlackAndWhite" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FoldTestWithTwoLines" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.com.insanejamferry in picture-book" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.GenerateImageTests" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FoldTestWithTwoLines" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.com.insanejamferry in picture-book" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GenerateImageTests" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FoldTestWithSingleLineInEachColumn.threeSheetsWithOneLineGivesCorrectHeight" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.GenerateImageTests" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.com.insanejamferry in picture-book" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FoldTestWithTwoLines" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FoldTestWithSingleLineInEachColumn" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FoldTestWithSingleLineInEachColumn.allBlackAndWhite" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.com.insanejamferry in picture-book" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FoldTestWithSingleLineInEachColumn.threeSheetsWithOneLineGivesCorrectHeight" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.GenerateImageTests" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FoldTestWithTwoLines" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FoldTestWithSingleLineInEachColumn" />
       </list>
     </recent_temporary>
   </component>
@@ -649,7 +634,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="100" y="22" width="1676" height="1028" extended-state="6" />
+    <frame x="4" y="22" width="1676" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -667,8 +652,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2184049" sideWeight="0.68281937" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3171806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25030676" sideWeight="0.6729075" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3270925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -785,13 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/insanejamferry/CalcuateFolds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="43" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/insanejamferry/DarkSection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="15" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
@@ -806,13 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/java/com/insanejamferry/FoldTestWithSingleLineInEachColumn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="50" selection-start="2679" selection-end="2679" vertical-scroll-proportion="-12.333333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/insanejamferry/FoldSection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="10" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
@@ -823,18 +794,14 @@
     <entry file="file://$PROJECT_DIR$/src/com/insanejamferry/ImageGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="13" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/java/com/insanejamferry/GenerateImageTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="8" selection-start="399" selection-end="712" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -845,7 +812,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="22" selection-end="22" vertical-scroll-proportion="0.035149384">
+        <state line="1" column="18" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/java/com/insanejamferry/FoldTestWithSingleLineInEachColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="24" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/insanejamferry/CalcuateFolds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="63" selection-start="514" selection-end="514" vertical-scroll-proportion="0.36563072">
           <folding />
         </state>
       </provider>

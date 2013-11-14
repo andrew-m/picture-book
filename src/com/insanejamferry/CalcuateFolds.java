@@ -1,7 +1,7 @@
 package com.insanejamferry;
 
 import javax.imageio.ImageIO;
-import java.awt.Graphics2D;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,11 +13,18 @@ public class CalcuateFolds {
     public Folds calculateFolds(Book book) throws IOException {
         FileInputStream fis = new FileInputStream(book.getImageFile());
 
-        BufferedImage image = ImageIO.read(fis);
+        BufferedImage originalImage = ImageIO.read(fis);
+        // a bit memory intensive this works -Xmx2048m -Xms256m
+        Image scaledInstance = originalImage.getScaledInstance(book.getNumberOfSheets(), originalImage.getHeight(), Image.SCALE_SMOOTH);
+        BufferedImage image = new BufferedImage(book.getNumberOfSheets(), originalImage.getHeight(), Image.SCALE_REPLICATE);
+        Graphics graphics = image.getGraphics();
+        graphics.drawImage(scaledInstance, 0, 0, null);
+        graphics.dispose();
+
 
         FoldSection [] foldSections = new FoldSection[book.getNumberOfSheets()];
 
-        int columnWidth = image.getWidth() / book.getNumberOfSheets(); // rounding issues???
+        int columnWidth = 1;
         int sectionNumber = 0;
         for (int x = 0; x < book.getNumberOfSheets(); x++) {
             BufferedImage columnImage = getColumnImage(image, columnWidth, x);
