@@ -33,8 +33,8 @@ public class FoldTestWithSingleLineInEachColumn {
         FoldSection[] foldSections = folds.getFolds();
         assertThat(foldSections.length, is(1));
 
-        assertThat(foldSections[0].getStart(), is(14.0));
-        assertThat(foldSections[0].getEnd(), is(24.0));
+        assertThat(foldSections[0].getStart(), is(14));
+        assertThat(foldSections[0].getEnd(), is(24));
     }
 
     @Test
@@ -47,8 +47,8 @@ public class FoldTestWithSingleLineInEachColumn {
         assertThat(foldSections.length, is(3));
 
         for (int x = 0; x <3; x++) {
-            assertThat(foldSections[x].getStart(), is(14.0));
-            assertThat(foldSections[x].getEnd(), is(24.0));
+            assertThat(foldSections[x].getStart(), is(14));
+            assertThat(foldSections[x].getEnd(), is(24));
         }
     }
 
@@ -61,12 +61,12 @@ public class FoldTestWithSingleLineInEachColumn {
         FoldSection[] foldSections = folds.getFolds();
         assertThat(foldSections.length, is(3));
 
-        assertThat(foldSections[0].getStart(), is(4.0));
-        assertThat(foldSections[0].getEnd(), is(14.0));
-        assertThat(foldSections[1].getStart(), is(24.0));
-        assertThat(foldSections[1].getEnd(), is(32.0));
-        assertThat(foldSections[2].getStart(), is(44.0));
-        assertThat(foldSections[2].getEnd(), is(50.0));
+        assertThat(foldSections[0].getStart(), is(4));
+        assertThat(foldSections[0].getEnd(), is(14));
+        assertThat(foldSections[1].getStart(), is(24));
+        assertThat(foldSections[1].getEnd(), is(32));
+        assertThat(foldSections[2].getStart(), is(44));
+        assertThat(foldSections[2].getEnd(), is(50));
     }
 
     @Test
@@ -78,8 +78,8 @@ public class FoldTestWithSingleLineInEachColumn {
         FoldSection[] foldSections = folds.getFolds();
         assertThat(foldSections.length, is(2));
 
-        assertThat(foldSections[0].getStart(), is(0.0));
-        assertThat(foldSections[0].getEnd(), is(60.0));
+        assertThat(foldSections[0].getStart(), is(0));
+        assertThat(foldSections[0].getEnd(), is(60));
 
         assertThat(foldSections[1], Is.is(nullValue()));
     }

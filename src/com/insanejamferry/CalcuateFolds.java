@@ -29,13 +29,13 @@ public class CalcuateFolds {
                 if (darkPoints.size() <= sectionNumber) {
                     sectionNumber = 0;
                 }
-                foldSections[x] = FoldSection.fromDarkSection(darkPoints.get(sectionNumber), book.getHeight() / image.getHeight());
+                foldSections[x] = FoldSection.fromDarkSection(darkPoints.get(sectionNumber), book.getHeightInMillimetres() / image.getHeight());
 
                 sectionNumber++;
             }
         }
 
-        return new Folds(foldSections);
+        return new Folds(foldSections, book);
     }
 
     private BufferedImage getColumnImage(BufferedImage image, int columnWidth, int x) {

@@ -5,13 +5,13 @@ import java.io.File;
 public class Book {
 
     private final int numberOfSheets;
-    private final double height;
+    private final int heightInMillimetres;
     private final File imageFile;
 
 
-    public Book(int numberOfSheets, double height, File imageFile) {
+    public Book(int numberOfSheets, int heightInMillimetres, File imageFile) {
         this.numberOfSheets = numberOfSheets;
-        this.height = height;
+        this.heightInMillimetres = heightInMillimetres;
         this.imageFile = imageFile;
     }
 
@@ -23,7 +23,7 @@ public class Book {
         return numberOfSheets;
     }
 
-    public double getHeight() {
-        return height;
+    public int getHeightInMillimetres() {
+        return heightInMillimetres;
     }
 }

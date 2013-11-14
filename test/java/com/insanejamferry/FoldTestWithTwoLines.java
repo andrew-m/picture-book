@@ -29,17 +29,17 @@ public class FoldTestWithTwoLines {
         FoldSection[] foldSections = folds.getFolds();
         assertThat(foldSections.length, is(4));
 
-        assertThat(foldSections[0].getStart(), is(10.0));
-        assertThat(foldSections[0].getEnd(), is(20.0));
+        assertThat(foldSections[0].getStart(), is(10));
+        assertThat(foldSections[0].getEnd(), is(20));
 
-        assertThat(foldSections[1].getStart(), is(40.0));
-        assertThat(foldSections[1].getEnd(), is(50.0));
+        assertThat(foldSections[1].getStart(), is(40));
+        assertThat(foldSections[1].getEnd(), is(50));
 
-        assertThat(foldSections[2].getStart(), is(30.0));
-        assertThat(foldSections[2].getEnd(), is(40.0));
+        assertThat(foldSections[2].getStart(), is(30));
+        assertThat(foldSections[2].getEnd(), is(40));
 
-        assertThat(foldSections[3].getStart(), is(30.0));
-        assertThat(foldSections[3].getEnd(), is(40.0));
+        assertThat(foldSections[3].getStart(), is(30));
+        assertThat(foldSections[3].getEnd(), is(40));
 
 
     }
