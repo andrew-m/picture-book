@@ -3,23 +3,28 @@ package com.insanejamferry;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CalcuateFolds {
+public class CalculateFolds {
 
     public Folds calculateFolds(Book book) throws IOException {
         FileInputStream fis = new FileInputStream(book.getImageFile());
 
         BufferedImage originalImage = ImageIO.read(fis);
         // a bit memory intensive this works -Xmx2048m -Xms256m
-        Image scaledInstance = originalImage.getScaledInstance(book.getNumberOfSheets(), originalImage.getHeight(), Image.SCALE_SMOOTH);
-        BufferedImage image = new BufferedImage(book.getNumberOfSheets(), originalImage.getHeight(), Image.SCALE_REPLICATE);
+        Image scaledInstance = originalImage.getScaledInstance(book.getNumberOfSheets(), book.getHeightInMillimetres(), Image.SCALE_SMOOTH);
+        BufferedImage image = new BufferedImage(book.getNumberOfSheets(), book.getHeightInMillimetres(), Image.SCALE_REPLICATE);
         Graphics graphics = image.getGraphics();
         graphics.drawImage(scaledInstance, 0, 0, null);
         graphics.dispose();
+
+//        File output = new File("test/images/output/ahh.png");
+//        output.createNewFile();
+//        ImageIO.write(image, "png", output);
 
 
         FoldSection [] foldSections = new FoldSection[book.getNumberOfSheets()];

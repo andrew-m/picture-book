@@ -17,6 +17,11 @@ public class ImageGenerator {
     }
 
     public void generateOutput(File file) throws IOException {
+        if (file.exists()) {
+            file.delete();
+        }
+        file.createNewFile();
+
         FileInputStream fis = new FileInputStream(folds.getBook().getImageFile());
         BufferedImage orginialImage = read(fis);
 
@@ -29,7 +34,7 @@ public class ImageGenerator {
         for (int col = 0; col < foldSections.length; col++) {
             if (foldSections[col] != null) {
                 for (int row = foldSections[col].getStart(); row < foldSections[col].getEnd(); row++) {
-                    outputImage.setRGB(col, row, Color.BLACK.getRGB());
+                    outputImage.setRGB(col, row, Color.BLUE.getRGB());
                 }
             }
 

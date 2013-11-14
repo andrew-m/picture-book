@@ -17,18 +17,18 @@ public class FoldTestWithSingleLineInEachColumn {
     private final static File threeLines = new File("test/images/30by30threelines.png");
     private final static File allBlackOrWhite = new File("test/images/allblackandwhite.png");
 
-    private CalcuateFolds calcuateFolds;
+    private CalculateFolds calculateFolds;
 
     @Before
     public void setup() {
-        calcuateFolds = new CalcuateFolds();
+        calculateFolds = new CalculateFolds();
     }
 
     @Test
     public void oneSheetWithOneLineGivesCorrectHeight() throws IOException {
         Book book = new Book(1, 60, oneLine, 0, 1);
 
-        Folds folds = calcuateFolds.calculateFolds(book);
+        Folds folds = calculateFolds.calculateFolds(book);
 
         FoldSection[] foldSections = folds.getFolds();
         assertThat(foldSections.length, is(1));
@@ -41,7 +41,7 @@ public class FoldTestWithSingleLineInEachColumn {
     public void threeSheetsWithOneLineGivesCorrectHeight() throws IOException {
         Book book = new Book(3, 60, oneLine, 0, 1);
 
-        Folds folds = calcuateFolds.calculateFolds(book);
+        Folds folds = calculateFolds.calculateFolds(book);
 
         FoldSection[] foldSections = folds.getFolds();
         assertThat(foldSections.length, is(3));
@@ -56,7 +56,7 @@ public class FoldTestWithSingleLineInEachColumn {
     public void threeSheetsWithThreeLinesGivesCorrectHeights() throws IOException {
         Book book = new Book(3, 60, threeLines, 0, 1);
 
-        Folds folds = calcuateFolds.calculateFolds(book);
+        Folds folds = calculateFolds.calculateFolds(book);
 
         FoldSection[] foldSections = folds.getFolds();
         assertThat(foldSections.length, is(3));
@@ -73,7 +73,7 @@ public class FoldTestWithSingleLineInEachColumn {
     public void allBlackAndWhite() throws IOException {
         Book book = new Book(2, 60, allBlackOrWhite, 0, 1);
 
-        Folds folds = calcuateFolds.calculateFolds(book);
+        Folds folds = calculateFolds.calculateFolds(book);
 
         FoldSection[] foldSections = folds.getFolds();
         assertThat(foldSections.length, is(2));

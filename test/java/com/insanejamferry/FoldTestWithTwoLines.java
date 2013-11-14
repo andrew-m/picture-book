@@ -13,18 +13,18 @@ public class FoldTestWithTwoLines {
 
     private final static File twoLines = new File("test/images/twolinesthenone.png");
 
-    private CalcuateFolds calcuateFolds;
+    private CalculateFolds calculateFolds;
 
     @Before
     public void setup() {
-        calcuateFolds = new CalcuateFolds();
+        calculateFolds = new CalculateFolds();
     }
 
     @Test
     public void oneSheetWithOneLineGivesCorrectHeight() throws IOException {
         Book book = new Book(4, 60, twoLines, 0, 1);
 
-        Folds folds = calcuateFolds.calculateFolds(book);
+        Folds folds = calculateFolds.calculateFolds(book);
 
         FoldSection[] foldSections = folds.getFolds();
         assertThat(foldSections.length, is(4));
