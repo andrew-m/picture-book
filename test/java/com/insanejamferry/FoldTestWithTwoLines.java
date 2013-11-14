@@ -22,7 +22,7 @@ public class FoldTestWithTwoLines {
 
     @Test
     public void oneSheetWithOneLineGivesCorrectHeight() throws IOException {
-        Book book = new Book(4, 60, twoLines);
+        Book book = new Book(4, 60, twoLines, 0, 1);
 
         Folds folds = calcuateFolds.calculateFolds(book);
 

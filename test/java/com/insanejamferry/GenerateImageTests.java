@@ -12,7 +12,7 @@ public class GenerateImageTests {
     @Test
     public void printImage() throws IOException {
         FoldSection [] foldSections = new FoldSection[7];
-        Book book = new Book(7, 10, twoLines);
+        Book book = new Book(7, 10, twoLines, 0, 1);
 
         foldSections[0] = new FoldSection(1,2);
         foldSections[1] = new FoldSection(3,7);

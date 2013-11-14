@@ -26,7 +26,7 @@ public class FoldTestWithSingleLineInEachColumn {
 
     @Test
     public void oneSheetWithOneLineGivesCorrectHeight() throws IOException {
-        Book book = new Book(1, 60, oneLine);
+        Book book = new Book(1, 60, oneLine, 0, 1);
 
         Folds folds = calcuateFolds.calculateFolds(book);
 
@@ -39,7 +39,7 @@ public class FoldTestWithSingleLineInEachColumn {
 
     @Test
     public void threeSheetsWithOneLineGivesCorrectHeight() throws IOException {
-        Book book = new Book(3, 60, oneLine);
+        Book book = new Book(3, 60, oneLine, 0, 1);
 
         Folds folds = calcuateFolds.calculateFolds(book);
 
@@ -54,7 +54,7 @@ public class FoldTestWithSingleLineInEachColumn {
 
     @Test
     public void threeSheetsWithThreeLinesGivesCorrectHeights() throws IOException {
-        Book book = new Book(3, 60, threeLines);
+        Book book = new Book(3, 60, threeLines, 0, 1);
 
         Folds folds = calcuateFolds.calculateFolds(book);
 
@@ -71,7 +71,7 @@ public class FoldTestWithSingleLineInEachColumn {
 
     @Test
     public void allBlackAndWhite() throws IOException {
-        Book book = new Book(2, 60, allBlackOrWhite);
+        Book book = new Book(2, 60, allBlackOrWhite, 0, 1);
 
         Folds folds = calcuateFolds.calculateFolds(book);
 
