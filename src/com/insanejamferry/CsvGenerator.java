@@ -30,9 +30,13 @@ public class CsvGenerator {
         for (FoldSection foldSection : foldSections) {
             String start = "-";
             String end = "-";
+            String bottomStart = "-";
+            String bottomEnd = "-";
             if (foldSection != null) {
                 start = String.valueOf(foldSection.getStart());
                 end = String.valueOf(foldSection.getEnd());
+                bottomStart = String.valueOf(folds.getBook().getHeightInMillimetres() - foldSection.getStart());
+                bottomEnd = String.valueOf(folds.getBook().getHeightInMillimetres() - foldSection.getEnd());
             }
 
             String pageDesc = String.valueOf(pageNumber);
@@ -48,7 +52,7 @@ public class CsvGenerator {
             else {
                 pageNumber += 2;
             }
-            String line = MessageFormat.format("{0},{1},{2}\n", pageDesc, start, end);
+            String line = MessageFormat.format("{0},{1},{2},{3},{4}\n", pageDesc, start, end, bottomStart, bottomEnd);
 
             fileOutputStream.write(line.getBytes());
 

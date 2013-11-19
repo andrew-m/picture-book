@@ -6,11 +6,11 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        File file = new File("test/images/jandt.png");
-        File outputImage = new File("test/images/output/jandt.png");
-        File outputCsv = new File("test/csv/jandt.txt");
+        File file = new File("test/images/jheartt.png");
+        File outputImage = new File("test/images/output/jheartt.png");
+        File outputCsv = new File("test/csv/jheartt.txt");
 
-        Book book = new Book(128, 118, file, 0, 1);
+        Book book = new Book(128, 183, file, 0, 1);
 
         CalculateFolds calculateFolds = new CalculateFolds();
 
