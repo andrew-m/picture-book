@@ -6,11 +6,13 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        File file = new File("test/images/jheartt.png");
-        File outputImage = new File("test/images/output/jheartt.png");
-        File outputCsv = new File("test/csv/jheartt.txt");
+        String bookName = "puzzleheight";
 
-        Book book = new Book(128, 183, file, 0, 1);
+        File file = new File("test/images/" + bookName  +".png");
+        File outputImage = new File("test/images/output/" + bookName +".png");
+        File outputCsv = new File("test/csv/" + bookName +".txt");
+
+        Book book = puzzle(file);
 
         CalculateFolds calculateFolds = new CalculateFolds();
 
@@ -21,5 +23,13 @@ public class Main {
 
         CsvGenerator csvGenerator = new CsvGenerator(folds);
         csvGenerator.generate(outputCsv);
+    }
+
+    public static Book jheartt(File file) {
+        return new Book(128, 183, file, 0, 1);
+    }
+
+    public static Book puzzle(File file) {
+        return new Book(208, 183, file, 0, 1);
     }
 }
